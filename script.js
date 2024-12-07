@@ -109,7 +109,7 @@ function checkProposalDate() {
 // ---- EXIBIR MENSAGEM "VOLTE EM 12/06/2026" ----
 function displayFutureMessage() {
     const currentDate = new Date();
-    const releaseDate = new Date('2023-06-12T00:00:00');
+    const releaseDate = new Date('2026-06-12T00:00:00');
 
     if (currentDate < releaseDate) {
         const message = document.createElement('div');
