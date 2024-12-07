@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOSSOS 6 MESES ❤️</title>
+    <title>EU E VOCÊ ❤️</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -61,14 +61,14 @@
             <div class="photo-box" style="background-image: url('amor5.jpeg');" onclick="openImage('amor5.jpeg');"></div>
             <div class="photo-box" style="background-image: url('amor6.jpeg');" onclick="openImage('amor6.jpeg');"></div>
         </div>
-        <button id="reveal-message-btn" onclick="revealMessage()">Clique para ver a mensagem</button>
-        <p id="hidden-message">Para a minha princesa,<br>
-
-            <br>Eu só quero que você saiba o quanto sou feliz por ter você ao meu lado. Cada momento com você é especial e me faz perceber o quanto sou grato por nossa história juntos. Seu sorriso ilumina meus dias e o seu amor é tudo o que eu preciso. Eu te amo demais, mais do que você seria capaz de imaginar, você faz parte de mim e eu espero ser assim para você também! Eu teeeeee amoooooooooooo! <br>
-            
-            <br>Sempre seu,
-            André Abdala. ❤️
-            </p>
+        <button id="reveal-message-btn" onclick="revealMessage()">CLIQUE AQUI</button>
+        <p id="hidden-message" style="display: none;">
+            <button id="close-message-btn" onclick="closeMessage()">X</button>
+            PARA A MINHA PRINCESA,<br><br>
+            EU SÓ QUERO QUE VOCÊ SAIBA O QUANTO SOU FELIZ POR TER VOCÊ AO MEU LADO. CADA MOMENTO COM VOCÊ É ESPECIAL E ME FAZ PERCEBER O QUANTO SOU GRATO POR NOSSA HISTÓRIA JUNTOS. SEU SORRISO ILUMINA MEUS DIAS E O SEU AMOR É TUDO O QUE EU PRECISO. EU TE AMO DEMAIS, MAIS DO QUE VOCÊ SERIA CAPAZ DE IMAGINAR, VOCÊ FAZ PARTE DE MIM E EU ESPERO SER ASSIM PARA VOCÊ TAMBÉM! <BR></BR> EU TEEEEE AMOOOOOOOOO! <br><br>
+            SEMPRE SEU,<br>
+            ANDRÉ ABDALA. ❤️💍
+        </p>               
     </section>
 
     <button id="back-to-top" onclick="scrollToTop()">⬆️</button>
@@ -86,11 +86,17 @@
         <button id="yes-btn">Sim</button>
         <button id="no-btn">Não</button>
     </section>        
-    <section id="proposal-section" style="display: none;">
-        <h2>Eu tenho uma pergunta importante para você ❤️</h2>
-        <p>Você aceita se casar comigo? 💍</p>
-        <button onclick="alert('Eu te amo! 💖')">Sim, aceito!</button>
+
+    <section>
+        <h2>AMOR, AGORA PRECISO QUE VOCÊ ESPERE ATÉ 12/06/2026 💍❤️</h2>
     </section>
+
+    <section id="proposal-section" style="display: none;">
+        <h2>CLIQUE NO BOTÃO ABAIXO 💍❤️</h2>
+        <button onclick="window.location.href = 'CASAMENTO/index.html';">Ir para o site</button>
+    </section>
+
+    <p id="final-message" style="display: none;">Volte em 12/06/2026 para mais surpresas! 🌟</p>
 
     <script src="script.js"></script>
 </body>

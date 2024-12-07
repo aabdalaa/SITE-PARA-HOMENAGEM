@@ -299,3 +299,58 @@ button.fugindo .legs {
 #audio-btn:hover {
     background-color: #d7bce8;
 }
+
+.speech-bubble {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#hidden-message {
+    display: none;
+    position: fixed; /* Fixa a posição na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para garantir que fique centralizada */
+    background-color: #ffffff; /* Cor sólida (branca) no fundo */
+    padding: 20px 30px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    max-width: 80%; /* Limita a largura */
+    font-family: 'Poppins', sans-serif; /* Fonte mais elegante */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 600; /* Aumenta a espessura da fonte (semi-negrito) */
+    color: #333; /* Cor do texto */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombras para um efeito mais suave */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    line-height: 1.6; /* Define um espaçamento entre linhas */
+    z-index: 1000; /* Garante que fique por cima de outros elementos */
+}
+
+#close-message-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: black; /* Cor do X */
+    font-size: 2rem; /* Tamanho do X */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#close-message-btn:hover {
+    color: black; /* Cor ao passar o mouse */
+}
+
+#hidden-message br {
+    margin: 10px 0; /* Dá espaço entre os quebras de linha */
+}
